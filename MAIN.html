@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>게임추천</title>
+    <style>
+        /* 전체 스타일 */
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* 헤더 스타일 */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+        
+        /* 콘텐츠 영역 스타일 */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        /* 카테고리 스타일 */
+        .categories {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .category {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 8px 16px;
+            background-color: #eee;
+            color: #333;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .category:hover {
+            background-color: #ddd;
+        }
+        
+        /* 게임 목록 스타일 */
+        .game-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .game-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .game-item h3 {
+            font-size: 24px;
+            margin: 0;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .game-item p {
+            margin: 0;
+            color: #777;
+        }
+        
+        .game-item img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        
+        /* 추천받기 버튼 스타일 */
+        .recommendation {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        
+        .recommendation a {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .recommendation a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>게임추천</h1>
+    </header>
+    
+    <div class="container">
+        <div class="categories">
+            <span class="category">액션</span>
+            <span class="category">어드벤처</span>
+            <span class="category">롤플레잉</span>
+            <span class="category">FPS</span>
+            <span class="category">MMORPG</span>
+            <span class="category">RPG</span>
+            <span class="category">레이싱</span>
+            <span class="category">스포츠</span>
+        </div>
+        
+        <ul class="game-list">
+            <li class="game-item">
+                <h3>액션 게임</h3>
+                <ol class="rank-list">
+                    <li>순위 1</li>
+                    <li>순위 2</li>
+                    <li>순위 3</li>
+                </ol>
+            </li>
+            <li class="game-item">
+                <h3>어드벤처 게임</h3>
+                <ol class="rank-list">
+                    <li>순위 1</li>
+                    <li>순위 2</li>
+                    <li>순위 3</li>
+                </ol>
+            </li>
+            <li class="game-item">
+                <h3>롤플레잉 게임</h3>
+                <ol class="rank-list">
+                    <li>순위 1</li>
+                    <li>순위 2</li>
+                    <li>순위 3</li>
+                </ol>
+            </li>
+            <!-- 추가적인 게임과 순위를 여기에 추가하세요 -->
+        </ul>
+        
+        <div class="recommendation">
+            <a href="survey.html">추천받기</a>
+        </div>
+    </div>
+</body>
+</html>
